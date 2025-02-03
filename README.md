@@ -1,4 +1,4 @@
-# Taqwa Islam
+# Taqwa Islam Website
 
 This website is a beautiful, user-friendly platform designed to help you explore the Quran and Hadiths. You can listen to Quran recitations, view the number of verses in each Surah, and read authentic Hadiths. The site is built with a smooth, modern design, using the latest web technologies to provide an optimal experience.
 
@@ -22,13 +22,15 @@ This website is a beautiful, user-friendly platform designed to help you explore
 - **Generate React CLI** – To quickly create React components and other files.
 
 ## APIs Used:
-- **Quran API**: You can access Quran data and recitations from [https://api.quran.gading.dev/](https://api.quran.gading.dev/).
-- **Hadith API**: You can access Sahih Muslim Hadiths from [https://api.hadith.gading.dev/books/muslim?range=1-150](https://api.hadith.gading.dev/books/muslim?range=1-150).
+- **Quran API**: You can access Quran data and recitations from [Quran API](https://api.quran.gading.dev/).
+- **Hadith API**: You can access Sahih Muslim Hadiths from [Ahadith API](https://api.hadith.gading.dev/books/muslim?range=1-150).
 
 ## How to Install:
 
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/MennaSayed46/Taqwa_Islam.git
+   cd Taqwa_Islam
+
    cd Taqwa_Islam
 
