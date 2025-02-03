@@ -4,7 +4,7 @@ import axios from 'axios'
 import { motion, AnimatePresence } from 'framer-motion'
 import pattern from '../../../public/bg-vector-2-1 (1).png'
 import Quran from '../Quran/Quran'
-import pillarsMainImg from '../../../public/pillar-parallex (1).jpg'
+import pillarsMainImg from '../../../public/pillar-parallex.jpg'
 
 export default function Home () {
   let [data, setData] = useState([])
@@ -167,15 +167,12 @@ export default function Home () {
       {/* pillars section */}
       <section className='relative flex flex-col justify-center items-center w-full min-h-[60vh] pillars'>
         <div
-          className='top-0 bottom-0 absolute inset-x-0'
+          className='absolute inset-0 bg-cover bg-center bg-fixed'
           style={{
-            backgroundImage: "url('../../../public/pillar-parallex (1).jpg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
+            backgroundImage: `url(${pillarsMainImg})`,
             filter: 'brightness(25%)'
           }}
-        ></div>
+        />
 
         <div className='flex flex-col justify-center items-center mx-auto w-4/5 text-center text-white transform'>
           <p
@@ -184,7 +181,7 @@ export default function Home () {
             About Essential
           </p>
           <p
-            className={`font-semibold text-3xl ${style.pillars_of_islam} my-5 relative text-black`}
+            className={`font-semibold text-3xl ${style.pillars_of_islam} my-5 relative text-white`}
           >
             Pillars of Islam
           </p>

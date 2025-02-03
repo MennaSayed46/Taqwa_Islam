@@ -54,8 +54,14 @@ export default function Contact () {
       <section
         className={`relative flex justify-center items-center w-full min-h-[50vh] contact ${style.contactSection}`} 
       >
+        <div className="top-0 bottom-0 absolute inset-x-0 bg-cover bg-center bg-fixed" style={{
+          backgroundImage: `url(${taqwa_islamic})`,
+          filter:'brightness(70%)'
+        }}>
 
-        <img src={taqwa_islamic} alt="" className='top-0 bottom-0 absolute inset-x-0 min-h-[50vh] *:' />
+        </div>
+
+       
       
 
         <div className='relative space-y-4 text-center text-white'>
