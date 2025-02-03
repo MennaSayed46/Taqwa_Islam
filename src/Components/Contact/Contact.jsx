@@ -2,8 +2,10 @@ import React, { useRef } from 'react'
 import style from './Contact.module.css'
 import { Link } from 'react-router-dom'
 import support_contact from '../../../public/support-contact.jpg'
+import taqwa_islamic from '../../../public/taqwa-islamic-wordpress-theme.jpg'
 import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast';
+
 
 export default function Contact () {
   const form = useRef();
@@ -50,19 +52,11 @@ export default function Contact () {
   return (
     <>
       <section
-        className={`relative flex justify-center items-center w-full min-h-[50vh] contact ${style.contactSection}`}
+        className={`relative flex justify-center items-center w-full min-h-[50vh] contact ${style.contactSection}`} 
       >
-        <div
-          className='absolute inset-0'
-          style={{
-            backgroundImage:
-              "url('../../../public/taqwa-islamic-wordpress-theme.jpg')",
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundAttachment: 'fixed',
-            filter: 'brightness(60%)'
-          }}
-        ></div>
+
+        <img src={taqwa_islamic} alt="" className='top-0 bottom-0 absolute inset-x-0 min-h-[50vh] *:' />
+      
 
         <div className='relative space-y-4 text-center text-white'>
           <p className='font-bold text-4xl'>Contact Us</p>

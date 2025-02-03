@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar () {
-//the part related to the time
-  const [currentDateTime, setCurrentDateTime] = useState(new Date());
+  //the part related to the time
+  const [currentDateTime, setCurrentDateTime] = useState(new Date())
   const options = {
     weekday: 'long',
     year: 'numeric',
@@ -15,16 +15,16 @@ export default function Navbar () {
     hour: '2-digit',
     minute: '2-digit',
     second: '2-digit',
-    hour12: true, 
-  };  
+    hour12: true
+  }
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentDateTime(new Date());
-    }, 1000); // Updates every second
+      setCurrentDateTime(new Date())
+    }, 1000) // Updates every second
 
-    return () => clearInterval(timer); // Cleanup on unmount
-  }, []);
+    return () => clearInterval(timer) // Cleanup on unmount
+  }, [])
 
   let [clickDropDown, setClickDropDown] = useState(false)
   function handleAzanDropDown () {
@@ -53,8 +53,6 @@ export default function Navbar () {
     setClickSubMenu(item)
     setClickToggle(!clickToggle)
   }
-
-  
 
   return (
     <>
@@ -207,8 +205,6 @@ export default function Navbar () {
                       : 'hidden  '
                   }`}
                 >
-
-
                   <Link
                     to={`/`}
                     className='flex flex-row justify-between items-center w-full hover:text-[#ff9822] hover:duration-200'
@@ -237,16 +233,11 @@ export default function Navbar () {
                   </Link>
                 </div>
               </div>
-            
-            
-          
 
               {/* Audios */}
               <div className='hover:text-[#ff9822] hover:duration-200 classes'>
                 <Link to={`/audios`}>Audios</Link>
               </div>
-
-
 
               {/* more pages */}
               <div
@@ -301,7 +292,13 @@ export default function Navbar () {
                     <p>Services </p>
                   </Link>
                 </div>
+
               </div>
+              
+                {/* contact */}
+                <div className='hover:text-[#ff9822] hover:duration-200 classes'>
+                  <Link to={`/contact`}>Contact</Link>
+                </div>
             </div>
           </div>
         )}
