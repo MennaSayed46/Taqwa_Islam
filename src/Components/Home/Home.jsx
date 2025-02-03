@@ -184,7 +184,7 @@ export default function Home () {
             About Essential
           </p>
           <p
-            className={`font-semibold text-3xl ${style.pillars_of_islam} my-5 relative`}
+            className={`font-semibold text-3xl ${style.pillars_of_islam} my-5 relative text-black`}
           >
             Pillars of Islam
           </p>
