@@ -1,0 +1,235 @@
+
+.history {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 35px;
+
+}
+
+.desc {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+}
+
+.readMore {
+    font-family: "Merriweather", serif;
+}
+
+.mainImg {
+    position: relative;
+}
+
+.mainImg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.mainImg>* {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .history {
+        font-size: 30px;
+        line-height: 25px;
+    }
+
+    .desc {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+.btn {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+}
+
+.btn::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #5c2b00;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.btn:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+}
+
+
+.specific_hadith {
+    /* direction: rtl; */
+}
+
+
+.hadithContent {
+    min-height: 250px;
+    overflow: auto;
+
+}
+
+
+.ahadith::after,
+.ahadith::before {
+    content: '';
+    position: absolute;
+    background-color: #FF9822;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ahadith::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+.ahadith::before {
+    width: 100px;
+    bottom: 0;
+}
+
+
+
+.ahadith {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    line-height: 28px;
+
+}
+
+
+/* translation btn */
+
+
+
+
+
+.translateBtn span {
+    position: relative;
+    z-index: 1;
+}
+
+.translateBtn span::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: -0.25em;
+    right: -0.25em;
+    background-color: #CBA35C;
+    transform-origin: center right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.translateBtn:hover span::before {
+    transform: scaleX(1);
+    transform-origin: center left;
+}
+
+.translateBtn:hover{
+    background-color: #E5D0AC;
+    color: black;
+}
+
+.ahadithSection{
+    background-image: linear-gradient(to bottom, black, #2f2f2f);
+}
+
+
+
+
+.about_pillars{
+    font-family:"Merriweather", serif ;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.pillars_of_islam{
+    font-family:"Merriweather", serif ;
+    font-size: 35px;
+    line-height: 20px;
+}
+
+.pillars_of_islam::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -18px;
+    width: 50%;
+    height: 3px;
+    background-color: #FF9822;
+}
+
+
+@media (max-width:768px){
+    .pillars_of_islam::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -18px;
+        width: 50%;
+        height: 3px;
+        background-color: #FF9822;
+    }
+    .about_pillars{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    
+    .pillars_of_islam{
+        font-size: 28px;
+        line-height: 15px;
+    }
+}
+
+
+
+
+.name_of_pillar_in_arab{
+    font-family:"Merriweather", serif ;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.pillar_name_in_en{
+    font-family:"Merriweather", serif ;
+    font-size: 18px;
+
+}
+

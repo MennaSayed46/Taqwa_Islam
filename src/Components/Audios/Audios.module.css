@@ -1,0 +1,77 @@
+
+.QuranTitle::after,
+.QuranTitle::before {
+    content: '';
+    position: absolute;
+    background-color: #FF9822;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.QuranTitle::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+.QuranTitle::before {
+    width: 100px;
+    bottom: 0;
+}
+
+
+
+.QuranTitle {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    line-height: 28px;
+
+}
+.titleSideBar{
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+
+
+
+
+/* customing overflow design */
+
+.container::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background:#212429;
+    border-radius: 6px;
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background: #495058; 
+  }
+
+.containerContent::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .containerContent::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  
+  .containerContent::-webkit-scrollbar-thumb {
+    background:#5c5e60;
+    border-radius: 6px;
+  }
+  
+  .containerContent::-webkit-scrollbar-thumb:hover {
+    background: #495058; 
+  }
+
+

@@ -1,0 +1,87 @@
+.quranContent div {
+    width: calc(100%-90px);
+    padding: 10px 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Merriweather", serif;
+    transition: 0.3s color ease;
+    counter-increment: surah-counter;
+
+}
+
+
+.quranContent>div::after {
+    content: counter(surah-counter);
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 22px;
+    line-height: 80px;
+    text-align: center;
+    background-color: inherit;
+    transition: inherit;
+    box-shadow: inherit;
+
+}
+
+.quranContent>div::before {
+    content: " ";
+    position: absolute;
+    border: 7px solid transparent;
+    border-right-color: #23162f;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -14px;
+
+}
+
+@media (max-width: 768px) {
+    .quranContent>div::after {
+        display: none;
+    }
+
+}
+
+.quranContent>div:hover,
+.quranContent>div:hover::after {
+    background-image: linear-gradient(to bottom, black, #2f2f2f);
+    color: white;
+}
+
+.QuranTitle::after,
+.QuranTitle::before {
+    content: '';
+    position: absolute;
+    background-color: #FF9822;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.QuranTitle::after {
+    width: 50px;
+    bottom: -10px;
+}
+
+.QuranTitle::before {
+    width: 100px;
+    bottom: 0;
+}
+
+
+
+.QuranTitle {
+    font-family: "Merriweather", serif;
+    font-size: 28px;
+    line-height: 28px;
+
+}
+
+.quranSection{
+    background-color: #2f2f2f;
+}

@@ -1,0 +1,27 @@
+p,li,.link
+link {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    font-style: italic;
+
+}
+.islamic{
+    
+    font-family: "Lobster Two", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 33px;
+      
+}
+
+li{
+    list-style: none;
+}
+
+nav{
+    z-index: 100;
+}
+

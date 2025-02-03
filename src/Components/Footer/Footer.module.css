@@ -1,0 +1,18 @@
+.footer_section p{
+    font-family:"Merriweather", serif ;
+}
+
+
+.title{
+    font-size: 22px;
+    margin-block: 10px;
+    font-family:"Merriweather", serif ;
+}
+
+.subscribe_now{
+    font-size: 20px;
+}
+
+.copyrights{
+    font-size: 16px;
+}
