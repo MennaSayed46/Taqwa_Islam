@@ -56,7 +56,7 @@ export default function Contact () {
           className='absolute inset-0'
           style={{
             backgroundImage:
-              "url('../../../public/taqwa-islamic-wordpress-theme (1).jpg')",
+              "url('../../../public/taqwa-islamic-wordpress-theme.jpg')",
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundAttachment: 'fixed',
